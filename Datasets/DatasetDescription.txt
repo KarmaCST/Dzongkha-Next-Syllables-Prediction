@@ -1,1 +1,3 @@
-
+# Dataset Description
+Dataset comprised of different genres such as short stories, essays, and news collected from DDC and Kuensel online newspaper. The file FinalDataset.docx contained combination of theses genres without preprocessing.
+However, the file xx contained preprocessed data after the removal of symbols, digits, urls, and English words.
