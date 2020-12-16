@@ -1,2 +1,8 @@
-# Dzongkha-Syllable-Prediction-Dataset
 # Dzongkha Next Syllables Prediction
+Dzongkha typing is time-consuming, burdensome, and irksome. A word in Dzongkha is formed by either a single syllable or multiple syllables. A single syllable རྒྱུ (property) requires six different keypresses and the multiple syllabic word ས་སྨུག་སྤུབས་སྤུབསཔ (cloudy) requires 22 keys to be pressed. Similarly, most of the syllables and words require several keypresses that make Dzongkha typing tedious and laborious.
+
+In this studies,the development of next syllables prediction system in Dzongkha is presented.The proposed system takes an initial input as a single syllable and predicts the next top five probable syllables. The best appropriate syllables are selected to form a word and subsequently, a word predicts the next plausible syllables. This approach keeps repeating until the desired sentences are written with the minimum keystrokes. 
+
+The corpus comprises of different genres (short stories, essays, and news) collected from the Dzongkha Development Commission of Bhutan and Kuensel online newspaper. The corpus is preprocessed by removing all the symbols, digits and English words. The dataset consists of 31,199 sentences and 222,844 syllables. Using the n-gram method, 195,998 sequences were generated from the dataset and comprised of 2,929 unique syllables. 
+
+The text sequences were converted into vectors using the word embedding technique and trained with the variants of Recurrent Neural Networks such as GRU, LSTM, CNN+GRU, CNN+LSTM, Bi-LSTM, and CNN+Bi-LSTM. The single-layer Long Short-Term Memory with 128 memory cells obtained the best training accuracy of 78.33%.
